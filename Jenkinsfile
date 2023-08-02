@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-            script{
+               script{
                 https://github.com/ravi009987/mrdevops_java_app.git
-            }
+                }
             }
         }
     }
