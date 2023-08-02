@@ -1,14 +1,13 @@
-pipeline{
-
+pipeline {
     agent any
-    stages{
-       stage{'git checkout'}{
-           steps{
-              script{
-                 git branch: 'main', url: 'https://github.com/ravi009987/JavaApplication.git'
-              }
-           }
-       }
-    }
 
+    stages {
+        stage('git checkout') {
+            steps {
+            script{
+                https://github.com/ravi009987/mrdevops_java_app.git
+            }
+            }
+        }
+    }
 }
